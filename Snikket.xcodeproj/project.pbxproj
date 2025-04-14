@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C6459E212DADB1A900894551 /* Snikket in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E202DADB1A900894551 /* Snikket */; };
+		C6459E242DADB1C200894551 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E232DADB1C200894551 /* ExyteChat */; };
+		C6459E272DADB1CE00894551 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E262DADB1CE00894551 /* SVGView */; };
+		C6459E2A2DADB1D800894551 /* ZMarkupParser in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E292DADB1D800894551 /* ZMarkupParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C690B5732DADB0E300448FE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,7 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C690B5612DADB0E300448FE2 /* Snikket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snikket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6459E2D2DADB2CB00894551 /* SnikketApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SnikketApp-Info.plist"; sourceTree = "<group>"; };
+		C690B5612DADB0E300448FE2 /* SnikketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnikketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C690B5722DADB0E300448FE2 /* SnikketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnikketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C690B57C2DADB0E300448FE2 /* SnikketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnikketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6459E2A2DADB1D800894551 /* ZMarkupParser in Frameworks */,
+				C6459E272DADB1CE00894551 /* SVGView in Frameworks */,
+				C6459E242DADB1C200894551 /* ExyteChat in Frameworks */,
+				C6459E212DADB1A900894551 /* Snikket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +87,7 @@
 		C690B5582DADB0E200448FE2 = {
 			isa = PBXGroup;
 			children = (
+				C6459E2D2DADB2CB00894551 /* SnikketApp-Info.plist */,
 				C690B5632DADB0E300448FE2 /* Snikket */,
 				C690B5752DADB0E300448FE2 /* SnikketTests */,
 				C690B57F2DADB0E300448FE2 /* SnikketUITests */,
@@ -85,7 +98,7 @@
 		C690B5622DADB0E300448FE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C690B5612DADB0E300448FE2 /* Snikket.app */,
+				C690B5612DADB0E300448FE2 /* SnikketApp.app */,
 				C690B5722DADB0E300448FE2 /* SnikketTests.xctest */,
 				C690B57C2DADB0E300448FE2 /* SnikketUITests.xctest */,
 			);
@@ -95,9 +108,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C690B5602DADB0E200448FE2 /* Snikket */ = {
+		C690B5602DADB0E200448FE2 /* SnikketApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C690B5862DADB0E300448FE2 /* Build configuration list for PBXNativeTarget "Snikket" */;
+			buildConfigurationList = C690B5862DADB0E300448FE2 /* Build configuration list for PBXNativeTarget "SnikketApp" */;
 			buildPhases = (
 				C690B55D2DADB0E200448FE2 /* Sources */,
 				C690B55E2DADB0E200448FE2 /* Frameworks */,
@@ -110,11 +123,15 @@
 			fileSystemSynchronizedGroups = (
 				C690B5632DADB0E300448FE2 /* Snikket */,
 			);
-			name = Snikket;
+			name = SnikketApp;
 			packageProductDependencies = (
+				C6459E202DADB1A900894551 /* Snikket */,
+				C6459E232DADB1C200894551 /* ExyteChat */,
+				C6459E262DADB1CE00894551 /* SVGView */,
+				C6459E292DADB1D800894551 /* ZMarkupParser */,
 			);
 			productName = Snikket;
-			productReference = C690B5612DADB0E300448FE2 /* Snikket.app */;
+			productReference = C690B5612DADB0E300448FE2 /* SnikketApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C690B5712DADB0E300448FE2 /* SnikketTests */ = {
@@ -195,12 +212,18 @@
 			);
 			mainGroup = C690B5582DADB0E200448FE2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C6459E1F2DADB1A900894551 /* XCLocalSwiftPackageReference "../snikket-swift" */,
+				C6459E222DADB1C200894551 /* XCRemoteSwiftPackageReference "Chat" */,
+				C6459E252DADB1CE00894551 /* XCRemoteSwiftPackageReference "SVGView" */,
+				C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C690B5622DADB0E300448FE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C690B5602DADB0E200448FE2 /* Snikket */,
+				C690B5602DADB0E200448FE2 /* SnikketApp */,
 				C690B5712DADB0E300448FE2 /* SnikketTests */,
 				C690B57B2DADB0E300448FE2 /* SnikketUITests */,
 			);
@@ -258,12 +281,12 @@
 /* Begin PBXTargetDependency section */
 		C690B5742DADB0E300448FE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C690B5602DADB0E200448FE2 /* Snikket */;
+			target = C690B5602DADB0E200448FE2 /* SnikketApp */;
 			targetProxy = C690B5732DADB0E300448FE2 /* PBXContainerItemProxy */;
 		};
 		C690B57E2DADB0E300448FE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C690B5602DADB0E200448FE2 /* Snikket */;
+			target = C690B5602DADB0E200448FE2 /* SnikketApp */;
 			targetProxy = C690B57D2DADB0E300448FE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -396,6 +419,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SnikketApp-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show the user a media picker for attaching media to a chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -411,7 +436,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.snikket.ios.Snikket;
+				PRODUCT_BUNDLE_IDENTIFIER = org.snikket.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -435,6 +460,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SnikketApp-Info.plist";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show the user a media picker for attaching media to a chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -450,7 +477,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.snikket.ios.Snikket;
+				PRODUCT_BUNDLE_IDENTIFIER = org.snikket.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -563,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C690B5862DADB0E300448FE2 /* Build configuration list for PBXNativeTarget "Snikket" */ = {
+		C690B5862DADB0E300448FE2 /* Build configuration list for PBXNativeTarget "SnikketApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C690B5872DADB0E300448FE2 /* Debug */,
@@ -591,6 +618,62 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C6459E1F2DADB1A900894551 /* XCLocalSwiftPackageReference "../snikket-swift" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../snikket-swift";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6459E222DADB1C200894551 /* XCRemoteSwiftPackageReference "Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/Chat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		C6459E252DADB1CE00894551 /* XCRemoteSwiftPackageReference "SVGView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/SVGView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+		C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZhgChgLi/ZMarkupParser.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6459E202DADB1A900894551 /* Snikket */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Snikket;
+		};
+		C6459E232DADB1C200894551 /* ExyteChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6459E222DADB1C200894551 /* XCRemoteSwiftPackageReference "Chat" */;
+			productName = ExyteChat;
+		};
+		C6459E262DADB1CE00894551 /* SVGView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6459E252DADB1CE00894551 /* XCRemoteSwiftPackageReference "SVGView" */;
+			productName = SVGView;
+		};
+		C6459E292DADB1D800894551 /* ZMarkupParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */;
+			productName = ZMarkupParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C690B5592DADB0E200448FE2 /* Project object */;
 }
