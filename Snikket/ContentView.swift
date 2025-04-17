@@ -132,5 +132,28 @@ struct ChatDetailView: View {
             showAttributionMark: true
         ))
         .navigationTitle(viewModel.name)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    let avatarURL = viewModel.chat?.getPhoto().flatMap { viewModel.chats.avatars[$0] }
+                    CachedAsyncImage(url: avatarURL) { image in
+                        image
+                            .resizable()
+                            .scaledToFill()
+                    } placeholder: {
+                        if let chat = viewModel.chat {
+                            SVGView(string: String(chat.getPlaceholder().removingPercentEncoding!.dropFirst(19)))
+                        }
+                    }
+                        .frame(width: 44, height: 44)
+                        .clipShape(Circle())
+                    Text(viewModel.name)
+                        .font(.headline)
+                        .lineLimit(1)
+                        .truncationMode(.middle)
+                }
+            }
+        }
     }
 }
