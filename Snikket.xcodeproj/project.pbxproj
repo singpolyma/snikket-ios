@@ -422,7 +422,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SnikketApp-Info.plist";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show the user a media picker for attaching media to a chat";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Used to allow user to record voice messages and make calls";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to show the user a photo picker for attaching media to a chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -465,7 +466,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SnikketApp-Info.plist";
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Used to show the user a media picker for attaching media to a chat";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Used to allow user to record voice messages and make calls";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used to show the user a photo picker for attaching media to a chat";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
