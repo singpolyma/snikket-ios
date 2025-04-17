@@ -11,6 +11,7 @@
 		C6459E242DADB1C200894551 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E232DADB1C200894551 /* ExyteChat */; };
 		C6459E272DADB1CE00894551 /* SVGView in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E262DADB1CE00894551 /* SVGView */; };
 		C6459E2A2DADB1D800894551 /* ZMarkupParser in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E292DADB1D800894551 /* ZMarkupParser */; };
+		C6459E302DB0BC0F00894551 /* Snikket in Frameworks */ = {isa = PBXBuildFile; productRef = C6459E2F2DB0BC0F00894551 /* Snikket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6459E2A2DADB1D800894551 /* ZMarkupParser in Frameworks */,
+				C6459E302DB0BC0F00894551 /* Snikket in Frameworks */,
 				C6459E272DADB1CE00894551 /* SVGView in Frameworks */,
 				C6459E242DADB1C200894551 /* ExyteChat in Frameworks */,
 				C6459E212DADB1A900894551 /* Snikket in Frameworks */,
@@ -129,6 +131,7 @@
 				C6459E232DADB1C200894551 /* ExyteChat */,
 				C6459E262DADB1CE00894551 /* SVGView */,
 				C6459E292DADB1D800894551 /* ZMarkupParser */,
+				C6459E2F2DB0BC0F00894551 /* Snikket */,
 			);
 			productName = Snikket;
 			productReference = C690B5612DADB0E300448FE2 /* SnikketApp.app */;
@@ -213,10 +216,10 @@
 			mainGroup = C690B5582DADB0E200448FE2;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				C6459E1F2DADB1A900894551 /* XCLocalSwiftPackageReference "../snikket-swift" */,
 				C6459E222DADB1C200894551 /* XCRemoteSwiftPackageReference "Chat" */,
 				C6459E252DADB1CE00894551 /* XCRemoteSwiftPackageReference "SVGView" */,
 				C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */,
+				C6459E2E2DB0BC0F00894551 /* XCRemoteSwiftPackageReference "swiftpm" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C690B5622DADB0E300448FE2 /* Products */;
@@ -625,13 +628,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		C6459E1F2DADB1A900894551 /* XCLocalSwiftPackageReference "../snikket-swift" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../snikket-swift";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		C6459E222DADB1C200894551 /* XCRemoteSwiftPackageReference "Chat" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -652,6 +648,14 @@
 		C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ZhgChgLi/ZMarkupParser.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C6459E2E2DB0BC0F00894551 /* XCRemoteSwiftPackageReference "swiftpm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://borogove.dev/src/r/swiftpm";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -678,6 +682,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C6459E282DADB1D800894551 /* XCRemoteSwiftPackageReference "ZMarkupParser" */;
 			productName = ZMarkupParser;
+		};
+		C6459E2F2DB0BC0F00894551 /* Snikket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6459E2E2DB0BC0F00894551 /* XCRemoteSwiftPackageReference "swiftpm" */;
+			productName = Snikket;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

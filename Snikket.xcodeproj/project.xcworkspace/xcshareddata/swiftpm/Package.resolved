@@ -1,5 +1,5 @@
 {
-  "originHash" : "5232abf8803c3b8d2dd531035ecf84d1fda5e1bf0b6223a5b78820f405b21ff1",
+  "originHash" : "691fc98cd72e3c2ff3f81497c45ec2db63c2739d6a96ad0b0419414cbc60500a",
   "pins" : [
     {
       "identity" : "activityindicatorview",
@@ -80,6 +80,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "6f3cb6bd3ffed1fe5f06d00a962d5c191a50daf8"
+      }
+    },
+    {
+      "identity" : "swiftpm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://borogove.dev/src/r/swiftpm",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3a4f6d39b0be4e7d7296210983fd2a95342271af"
       }
     },
     {
