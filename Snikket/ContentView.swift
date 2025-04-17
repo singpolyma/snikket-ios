@@ -34,7 +34,7 @@ struct ContentView: View {
                     HStack {
                         let avatarURL = chat.chat.getPhoto().flatMap { chats.avatars[$0] }
                         CachedAsyncImage(url: avatarURL) { image in
-                        image
+                            image
                                 .resizable()
                                 .scaledToFill()
                         } placeholder: {
@@ -53,12 +53,8 @@ struct ContentView: View {
                                 .foregroundColor(.gray)
                                 .lineLimit(1)
                                 .truncationMode(.tail)
-                            Text(chat.chat.lastMessageTimestamp().flatMap { parseDate(date: $0) }?.formatted() ?? "")
-                                .font(.footnote)
-                                .foregroundColor(.gray)
-                                .lineLimit(1)
-                                .truncationMode(.tail)
                         }
+                        .padding(.horizontal, 5)
                     }
                     .padding(.vertical, 8)
                 }
