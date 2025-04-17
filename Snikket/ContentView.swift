@@ -127,7 +127,10 @@ struct ChatDetailView: View {
         .enableLoadMore(pageSize: 10, { before in
             viewModel.loadMessagesBefore(message: before)
         })
-        .giphyConfig(GiphyConfiguration(giphyKey: Bundle.main.object(forInfoDictionaryKey: "GIPHY_KEY") as? String))
+        .giphyConfig(GiphyConfiguration(
+            giphyKey: Bundle.main.object(forInfoDictionaryKey: "GIPHY_KEY") as? String,
+            showAttributionMark: true
+        ))
         .navigationTitle(viewModel.name)
     }
 }
